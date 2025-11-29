@@ -9,8 +9,9 @@ from flask_socketio import emit
 from flask_jwt_extended import jwt_required, get_jwt_identity, decode_token
 import requests
 
-BIGMODEL_API_KEY = "64661646507f4886af8bda4d2928e21b.RIQSS2ebNaX4yVAr"
-BIGMODEL_APP_ID = "1923383444797325312"
+# 这里替换成你自己的ID和key
+BIGMODEL_API_KEY = "your_key"
+BIGMODEL_APP_ID = "your_id"
 BIGMODEL_BASE_URL = "https://open.bigmodel.cn/api/llm-application/open" # https://appcenter.bigmodel.cn/console/appcenter_v2/chat?share_code=joJv9n4c_-GMEaSsY4Ekq
 
 chat_api = Blueprint("chat", __name__, url_prefix="/api/chat")
