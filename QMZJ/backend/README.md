@@ -7,7 +7,7 @@
 3. 创建数据库QMZJ：create database QMZJ;
 4. 打开新的终端控制台
 5. 运行neo4j.bat console（要保持终端一直打开）或者neo4j.bat start
-6. 打开浏览器，访问http://localhost:7474/，进入Neo4j数据库页面，默认用户名和密码均为neo4j，登录
+6. 打开浏览器，访问http://localhost:7474/ ，进入Neo4j数据库页面，默认用户名和密码均为neo4j，登录
 7. 可以自行修改Neo4j数据库密码
 8. 打开源文件/backend，进入config.py文件，修改SQLALCHEMY_DATABASE_URI = 'mysql+pymysql://root:password@localhost:3306/QMZJ'，password填写你的MySQL数据库的密码
 9. 打开源文件/backend/db文件夹，进入config.py，修改graph = Graph("bolt://localhost:7687", auth=("neo4j", "neo4j"))，默认的账号和密码均为neo4j
